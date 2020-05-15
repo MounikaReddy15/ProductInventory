@@ -1,5 +1,5 @@
 1. ProductInn is an ecommerce inventory which houses the information about the products 
-   and the quantity that the tore owns
+   and the quantity that the store owns
 
 2. It runs on localhost:3000 
 
@@ -14,17 +14,20 @@
 7. we are using four types of http requests here,
 
 i)  get: to get the information or to delete
-    Lists all products
-    GET localhost:3000/api/v1/products
 
+    Lists all products: GET localhost:3000/api/v1/products
+    
 ii)  post: to add the information
-     Adds a new product
-     POST localhost:3000/api/v1/products/create
 
+     Adds a new product: POST localhost:3000/api/v1/products/create
+
+     
 iii) put: to update the information
+
      PUT localhost:3000/api/v1/products/5ebe847764797e9c28338ff7/update_quantity
 
 iv) delete: to delete the information
+
     DELETE localhost:3000/api/v1/products/5ebe846d64797e9c28338ff6
 
 
