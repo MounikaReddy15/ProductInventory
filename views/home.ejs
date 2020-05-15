@@ -1,0 +1,30 @@
+
+<!-- home page -->
+<link rel="stylesheet" href="/css/home.css">
+     
+<div id = "home-container">
+  <section id = "feed-products">
+  <h4> Products </h4>
+  <!-- Products Listing form -->
+             <form action="/products/create" id="new-product-form" method="POST">
+                <input type="text" name= "name" placeholder="Add Product" required>
+                <input type="number" name= "quantity" placeholder=" Quantity " required>
+                <input type="submit" value= "Add">
+             </form>
+
+              <!-- displays products -->
+            <div id= "products-list-container">
+                 
+               <% for(product of products) { %> 
+                       <div id= "product-details">
+                        <%- include('_product'); %>
+                      </div>
+                      <%} %>
+              
+
+          </div>
+  </section>
+       
+  
+</div>
+<script src="/js/home_products.js"></script>

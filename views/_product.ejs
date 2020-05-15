@@ -1,0 +1,31 @@
+
+<li id= "product.name-<%= product._id %>">   <%= product.name %>  <%= product.quantity %> 
+
+        <!-- to delete the product -->
+     <small>
+        <a class = "delete-product-button" href="/products/destroy/<%= product._id %>" > X </a> 
+     </small>
+
+     <!-- to update the product -->
+     <form action="/products/update/<%= product._id %>" id="update-form" method="POST">
+                
+        <input type="number" name= "quantity" placeholder=" Quantity " required>
+        <input type="submit" value= "Update">
+</form>
+
+</li>
+      
+  
+  
+
+   
+  
+        
+  
+        
+  
+        
+        
+        
+   
+   

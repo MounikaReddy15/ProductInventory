@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="">
+<div id= "products-list-container">
+    <!-- List of all the products -->
+    <ul>
+          <% for(product of products) { %> 
+            <table id= "table">
+                <tr>
+                  <th><%= product.name %> &nbsp; </th>
+                  &nbsp;
+                  <th><%= product.quantity %> </th>
+               </tr>
+            </table>
+           <%} %>
+          
+           
+    </ul>
+   

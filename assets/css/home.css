@@ -1,0 +1,10 @@
+body {
+    background-color:lightgrey;
+    text-align: center;
+    margin-top: 50px;
+    color:grey;
+}
+
+.product-details{
+    align-items: center;
+}
